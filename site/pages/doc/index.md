@@ -9,8 +9,21 @@
     </div>
     <div class="block">
       <span class="demonstration">Custom</span>
+      {{ name }}
     </div>
-    <button-button/>
+    <lx-button/>
+    <lx-tree/>
   </div>
+  <script>
+    export default {
+      id: 'Md11',
+      name: 'Md11',
+      data() {
+        return {
+          name: 'ling'
+        }
+      }
+    }
+  </script>
 ```
 :::

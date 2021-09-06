@@ -30,7 +30,7 @@ module.exports = function(source) {
     const script = stripScript(commentContent)
     let demoComponentContent = genInlineComponentText(html, script)
     const demoComponentName = `element-demo${id}`
-    output.push(`<template><${demoComponentName} /></template>`)
+    output.push(`<template #source><${demoComponentName} /></template>`)
     componenetsString += `${JSON.stringify(demoComponentName)}: ${demoComponentContent},`
 
     // 重新计算下一次的位置
@@ -62,7 +62,6 @@ module.exports = function(source) {
   output.push(content.slice(start))
   
   // console.log("content------------>", content);
-  console.log("output.join('') ----------------------> ", output.join(''));
 
   const result = `
     <template>

@@ -102,7 +102,7 @@ var config = {
           //   }
           // },
         ]
-      },
+      }
     ]
   },
   plugins:[
@@ -116,7 +116,8 @@ var config = {
 }
 
 var server = new WebpackDevServer(webpack(config),{
-  contentBase: path.resolve(process.cwd() , './public')
+  contentBase: path.resolve(process.cwd() , './public'),
+
 });
 
 server.listen("8015",'0.0.0.0',(err)=>{
