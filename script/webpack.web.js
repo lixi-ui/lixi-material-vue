@@ -120,9 +120,9 @@ var server = new WebpackDevServer(webpack(config),{
 
 });
 
-server.listen("8015",'0.0.0.0',(err)=>{
+server.listen("8021",'0.0.0.0',(err)=>{
   if(!err){
-    console.log('http://localhost:8015')
+    console.log('http://localhost:8021')
   } else {
     console.log('err', err);
   }
