@@ -24,14 +24,16 @@
       <router-view></router-view>
     </div> 
   </div>
+
 </template>
 
 <script>
-import Md from './index.md';
-import "./index.scss";
+// import Md from './index.md';
+// import "./index.scss";
 export default {
-  components:{
-    Md
-  }
+  name: 'MaterilDov'
+  // components:{
+  //   Md
+  // }
 }
 </script>
