@@ -1,6 +1,5 @@
 <template>
   <div>
-    echart -line
     <div ref="line" class="echart-line">
     </div>
   </div>

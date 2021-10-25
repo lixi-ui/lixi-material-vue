@@ -1,6 +1,5 @@
 <template>
   <div>
-    {{ pageName }}
     <Md/>
   </div>
 </template>
@@ -14,7 +13,6 @@
     },
     data () {
       return {
-        pageName: 'button - doc',
         lang: 'zh'
       }
     },
