@@ -9,10 +9,10 @@
           lixi
         </div>
         <div className="home-inner-content">
-          ui 框架
+          material 材料库
         </div>
         <div className="home-inner-bottom">
-          <span className="home-inner-quick">快速开始</span>
+          <span className="home-inner-quick" href="http://121.5.123.5:8022/#/doc/introduce">快速开始</span>
           <span className="home-inner-github">GITHUB</span>
         </div>
       </div>
@@ -22,7 +22,7 @@
         项目模块
       </div>
       <div className="home-gist-content">
-        <div className="home-gist-item home-gist-web">
+        <a className="home-gist-item home-gist-web" href="http://121.5.123.5:8020/#/home" target="_blank">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-1"></div>
             <div className="home-gist-title">web</div>
@@ -33,8 +33,8 @@
           <div className="home-gist-bottom">
             查看详情
           </div>
-        </div>
-        <div className="home-gist-item home-gist-ui">
+        </a>
+        <a className="home-gist-item home-gist-ui" href="http://121.5.123.5:8018/#/home" target="_blank">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-2"></div>
             <div className="home-gist-title">ui</div>
@@ -45,8 +45,8 @@
           <div className="home-gist-bottom">
             查看详情
           </div>
-        </div>
-        <div className="home-gist-item home-gist-material">
+        </a>
+        <div className="home-gist-item home-gist-material" href="http://121.5.123.5:8022/#/home">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-3"></div>
             <div className="home-gist-title">material</div>
