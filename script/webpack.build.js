@@ -3,9 +3,11 @@ var webpack = require("webpack");
 
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 const { VueLoaderPlugin, default: loader } = require('vue-loader');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 var config = {
-  mode:"development",
+  mode:"production",
   entry: [
     './site/index.js'
   ],
@@ -13,7 +15,7 @@ var config = {
     path: path.resolve(process.cwd() , './dist'),
     // path: path.join(__dirname, "dist"),
     filename: 'index.js',
-    publicPath: '/',
+    publicPath: '/material/',
     environment: {
       arrowFunction: false
     }
@@ -79,7 +81,7 @@ var config = {
       {
         test: /\.(scss|css)$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -117,6 +119,10 @@ var config = {
       template: './public/index.html',
       filename: './index.html',
       favicon: './public/lixi-logo.png'
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
     new VueLoaderPlugin()
   ]

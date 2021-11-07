@@ -12,7 +12,7 @@
           material 材料库
         </div>
         <div className="home-inner-bottom">
-          <a className="home-inner-quick" href="http://121.5.123.5:8022/#/doc/introduce">快速开始</a>
+          <a className="home-inner-quick" href="http://lingyuanping.top/material/#/doc/introduce">快速开始</a>
           <a className="home-inner-github" href="https://github.com/lixi-ui/lixi-material-vue">GITHUB</a>
         </div>
       </div>
@@ -22,7 +22,7 @@
         项目模块
       </div>
       <div className="home-gist-content">
-        <a className="home-gist-item home-gist-web" href="http://121.5.123.5:8020/#/doc/web">
+        <a className="home-gist-item home-gist-web" href="http://lingyuanping.top/web/#/doc/web">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-1"></div>
             <div className="home-gist-title">web</div>
@@ -34,7 +34,7 @@
             查看详情
           </div>
         </a>
-        <a className="home-gist-item home-gist-ui" href="http://121.5.123.5:8018/#/home">
+        <a className="home-gist-item home-gist-ui" href="http://lingyuanping.top/vue/#/home">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-2"></div>
             <div className="home-gist-title">ui</div>
@@ -46,7 +46,7 @@
             查看详情
           </div>
         </a>
-        <a className="home-gist-item home-gist-material" href="http://121.5.123.5:8022/#/doc/material">
+        <a className="home-gist-item home-gist-material" href="http://lingyuanping.top/material/#/doc/">
           <div className="home-gist-wrap">
             <div className="home-gist-img home-gist-img-3"></div>
             <div className="home-gist-title">material</div>
