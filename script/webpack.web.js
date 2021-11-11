@@ -24,7 +24,7 @@ var config = {
     extensions: ['.ts', '.tsx', '.js', '.vue', '.json'],
     alias: {
       // vue: `vue/dist/${vueBundle}`,
-      // 'vue': path.resolve(__dirname, '../node_modules/vue/dist/vue.esm-browser.js'),
+      'vue': path.resolve(__dirname, '../node_modules/vue/dist/vue.esm-browser.js'),
       '@lixi': path.join(__dirname , '../src'),
       '@site': path.join(__dirname , '../site')
     },
