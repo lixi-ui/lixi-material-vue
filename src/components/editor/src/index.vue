@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-upload
+    <lx-upload
       :action="uploadUrl"
       :before-upload="handleBeforeUpload"
       :on-success="handleUploadSuccess"
@@ -12,20 +12,24 @@
       ref="upload"
       v-if="this.type == 'url'"
     >
-    </el-upload>
+    </lx-upload>
     <div class="editor" ref="editor" :style="styles"></div>
   </div>
 </template>
 
 <script>
+import LxUpload from 'lixi-ui-vue/lib/cjs/upload'
 import Quill from "quill";
 import "quill/dist/quill.core.css";
 import "quill/dist/quill.snow.css";
 import "quill/dist/quill.bubble.css";
-import { getToken } from "@/utils/auth";
+// import { getToken } from "@/utils/auth";
 
 export default {
   name: "lvEditor",
+  components: {
+    LxUpload
+  },
   props: {
     /* 编辑器的内容 */
     value: {
@@ -60,9 +64,10 @@ export default {
   },
   data() {
     return {
-      uploadUrl: process.env.VUE_APP_BASE_API + "/common/upload", // 上传的图片服务器地址
+      // uploadUrl: process.env.VUE_APP_BASE_API + "/common/upload", // 上传的图片服务器地址
+      uploadUrl: "/common/upload", // 上传的图片服务器地址
       headers: {
-        Authorization: "Bearer " + getToken()
+        // Authorization: "Bearer " + getToken()
       },
       Quill: null,
       currentValue: "",
