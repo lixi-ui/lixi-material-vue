@@ -42,7 +42,7 @@
 // import { getToken } from "@/utils/auth";
 import LxUpload from 'lixi-ui-vue/lib/cjs/upload'
 import LxLink from 'lixi-ui-vue/lib/cjs/iink'
-import { LxButton } from 'lixi-ui-vue'
+import LxButton from 'lixi-ui-vue/lib/cjs/button'
 
 
 export default {

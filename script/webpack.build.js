@@ -24,7 +24,7 @@ var config = {
     extensions: ['.ts', '.tsx', '.js', '.vue', '.json'],
     alias: {
       // vue: `vue/dist/${vueBundle}`,
-      // 'vue': path.resolve(__dirname, '../node_modules/vue/dist/vue.esm-browser.js'),
+      'vue': path.resolve(__dirname, '../node_modules/vue/dist/vue.esm-browser.prod.js'),
       '@lixi': path.join(__dirname , '../src'),
       '@site': path.join(__dirname , '../site')
     },
@@ -92,7 +92,7 @@ var config = {
         ]
       },
       {
-        test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+        test: /\.(otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
         use: [
           {
             loader: 'url-loader',
@@ -111,6 +111,13 @@ var config = {
           //   }
           // },
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        options: {
+          symbolId: 'icon-[name]'
+        }
       }
     ]
   },
@@ -124,7 +131,11 @@ var config = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: JSON.stringify(true),
+      __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
+    })
   ]
 }
 

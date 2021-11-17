@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { LxTag } from 'lixi-ui-vue'
+import LxTag from 'lixi-ui-vue/lib/cjs/tag'
 export default {
   name: "LvDictTag",
   props: {

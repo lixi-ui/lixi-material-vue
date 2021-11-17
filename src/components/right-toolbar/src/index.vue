@@ -88,13 +88,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-::v-deep .lx-transfer__button {
+::v-deep(.lx-transfer__button) {
   border-radius: 50%;
   padding: 12px;
   display: block;
   margin-left: 0px;
 }
-::v-deep .lx-transfer__button:first-child {
+::v-deep(.lx-transfer__button:first-child) {
   margin-bottom: 10px;
 }
 </style>
