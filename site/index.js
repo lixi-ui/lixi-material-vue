@@ -9,6 +9,7 @@ import demoBlock from './components/demo-block/index.vue';
 
 import './style/index.scss'
 import 'lixi-ui-vue/lib/style/styles.css'
+import 'highlight.js/styles/color-brewer.css'
 
 var app = createApp(App);
 app.component('DemoBlock', demoBlock)
